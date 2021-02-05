@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
+@layer utilities {  
+  .ringOne img {
+    animation: rotateRing 2s linear infinite
+  }
+  
+  .ringTwo img {
+    animation: rotateRing 8s linear infinite
+  }
 
-.ring{
-  @apply m-0 p-0 absolute w-4/5 opacity-75;
+  .ringThree img {
+    animation: rotateRing 4s linear infinite
+  }
+
+  @keyframes rotateRing {
+    from{
+      transform : rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
 }
