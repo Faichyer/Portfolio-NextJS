@@ -12,8 +12,9 @@ module.exports = {
         '8xl': '6rem'
       },
       fontFamily: {
-        'title': ['Montserrat', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        'barcode' : ['Libre Barcode 39', 'cursive']
+        'title': '"Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"',
+        'barcode': '"Libre Barcode 39", "cursive"',
+        'playfair': '"Playfair Display","-apple-system","BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"'
       }
     },
   },
