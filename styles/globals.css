@@ -2,38 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  src: url('../public/fonts/Montserrat-Regular.ttf');
+@layer base{
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../public/fonts/Montserrat-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url('../public/fonts/Montserrat-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    src: url('../public/fonts/Montserrat-Thin.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    src: url('../public/fonts/PlayfairDisplay-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    src: url('../public/fonts/PlayfairDisplay-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    src: url('../public/fonts/PlayfairDisplay-Medium.ttf');
+  }
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  src: url('../public/fonts/Montserrat-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-weight: 100;
-  src: url('../public/fonts/Montserrat-Thin.ttf');
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  src: url('../public/fonts/PlayfairDisplay-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  font-weight: 700;
-  src: url('../public/fonts/PlayfairDisplay-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  font-weight: 500;
-  src: url('../public/fonts/PlayfairDisplay-Medium.ttf');
+html, body{
+  @apply bg-background;
+  @apply absolute;
+  @apply w-screen;
+  @apply overflow-x-hidden
 }
