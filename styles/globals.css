@@ -42,6 +42,10 @@
   figcaption{
     backface-visibility: hidden;
   }
+
+  .container{
+    @apply min-h-screen flex justify-center items-center text-center mx-auto
+  }
 }
 
 html, body{

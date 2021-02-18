@@ -22,31 +22,31 @@ const ProjectList = () => {
 
   return (
     <div className="mx-auto container flex flex-col">
-      <div className="flex flex-row xl:space-x-24 lg:space-x-16 md:space-x-8 space-x-0 mb-2 max-w-full">
-        <div className="xl:text-3xl lg:text-3xl md:text-2xl text-xl py-2 px-4">
-          {categories.map((category) => {
-            return category.active ?
-              <div className="text-white cursor-pointer">
-                {category.name}
+
+      <div className="grid grid-cols-4  xl:space-x-24 lg:space-x-16 md:space-x-8 space-x-0 max-w-full xl:text-3xl lg:text-3xl md:text-2xl text-xl py-2 px-4">
+        {categories.map((category) => {
+          return category.active ?
+            <div className="text-white cursor-pointer font-playfair">
+              {category.name}
             </div> :
-              <div className="text-gray-500 hover:text-white transition duration-500 ease-in-out cursor-pointer">
-                {category.name}
+            <div className="text-gray-500 hover:text-white transition font-playfair duration-500 ease-in-out cursor-pointer">
+              {category.name}
             </div>
-          })}
-        </div>
+        })}
+
       </div>
-      <div className="mt-16 w-full px-4 grid md:grid-cols-2 grid-cols-1 space-y-2 md:space-y-0">
+      <div className="mt-16 place-items-center gap-x-0 w-full px-4 grid md:grid-cols-2 grid-cols-1 space-y-2 space-x-0 md:space-y-0">
         {
-          categories.find(category => category.active === true).name === 'All work' ?  
+          categories.find(category => category.active === true).name === 'All work' ?
             projects.map((project) => {
               return <Project key={project.id} name={project.name} img={project.img} isActive={project.isActive} technologies={project.technologies} website={project.website} />
-            }) : 
-            
+            }) :
+
             projects.filter(project => project.categorie === (categories.find(category => category.active === true).name)).map((project) => {
               return <Project key={project.id} name={project.name} img={project.img} isActive={project.isActive} technologies={project.technologies} website={project.website} />
             })
         }
-        </div>
+      </div>
     </div >
   )
 }
