@@ -13,7 +13,7 @@ const Intro = props => {
         <div>
           <Image src="/images/Photo_miki_3.jpg" width={120} height={120} className="rounded-full" />
         </div>
-        <div className="xl:text-3xl lg:text-3xl md:text-2xl text-xl text-white font-medium mt-4 font-playfair ">
+        <div className="xl:text-3xl lg:text-3xl md:text-2xl text-lg text-white font-medium mt-4 font-playfair ">
           Miki Namsrai
     </div>
         <div className=" lg:text-6xl md:text-4xl text-3xl text-white font-title mt-10 font-thin leading-none" >
@@ -29,7 +29,7 @@ const Intro = props => {
         <div className="text-white font-playfair text-2xl">
           SAP MII Consultant at Movilitas
     </div>
-        <div className="flex flex-row mt-12 text-white text-lg leading-8">
+        <div className="flex flex-row mt-12 text-white text-base leading-8">
           <span className="click-see-profile cursor-pointer hover:text-purple-700 transition duration-750">See my profile</span><span className="ml-1"> or scroll down to see my work</span>
         </div>
       </div>

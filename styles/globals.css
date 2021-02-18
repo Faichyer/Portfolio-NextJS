@@ -38,6 +38,10 @@
     font-weight: 500;
     src: url('../public/fonts/PlayfairDisplay-Medium.ttf');
   }
+
+  figcaption{
+    backface-visibility: hidden;
+  }
 }
 
 html, body{

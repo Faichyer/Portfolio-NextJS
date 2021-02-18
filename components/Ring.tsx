@@ -8,7 +8,7 @@ export interface RingProps{
 
 const Ring: React.FC<RingProps> = (props) => {
   return (
-    <motion.div className="m-0 p-0 absolute opacity-75 top-64 left-15 w-72 md:top-12 md:w-auto "
+    <motion.div className="m-0 p-0 absolute opacity-75 top-40 left-15 w-72 md:top-12 md:w-auto "
       animate={{ rotate: 360 }}
       transition={{ repeat: Infinity, duration: props.duration }}
     >
