@@ -40,7 +40,7 @@ const Project: React.FC<projectProps> = (props) => {
                 <h3 className="inline font-thin font-title text-purple-700">
                   {props.technologies.map((tech, index) => {
 
-                    return index != Object.keys(technologies).length - 1 ? <span>{tech} /</span> : <span>{tech} </span>
+                    return index != Object.keys(technologies).length - 1 ? <span key={index}>{tech} /</span> : <span key={index}>{tech} </span>
                   })}
                 </h3>
               </div>
