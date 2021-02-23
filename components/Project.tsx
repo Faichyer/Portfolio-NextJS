@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import useHover from './hooks/useHover';
 
 interface projectProps {
   name: string;
@@ -37,14 +36,14 @@ const Project: React.FC<projectProps> = (props) => {
                 {props.name}
               </h2>
               <div>
-                <h3 className="inline font-thin font-title text-purple-700">
+                <h3 className="inline font-thin font-title text-purple-500">
                   {props.technologies.map((tech, index) => {
 
                     return index != Object.keys(technologies).length - 1 ? <span key={index}>{tech} /</span> : <span key={index}>{tech} </span>
                   })}
                 </h3>
               </div>
-              <a className="cursor-pointer mt-12 mx-16 transition duration-500 ease-in-out transform bg-transparent font-title hover:bg-purple-900 text-purple-700 font-thin hover:text-white py-2 px-4 border border-purple-900 hover:border-transparent">
+              <a className="cursor-pointer mt-12 mx-16 transition duration-500 ease-in-out transform bg-transparent font-title hover:bg-purple-800 text-purple-500 font-thin hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent">
                 LEARN MORE
               </a>
             </figcaption > : null
